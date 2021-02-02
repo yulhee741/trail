@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+
+<div class="center-box">
+<h1> 현재 시간의 관광지 날씨 조회 </h1>
+  <form action="/" method="post">
+  {% csrf_token %}
+    <div class="textbox">
+        <label for="name">검색</label>
+        <input type="text" name="spotName" id="name" />
+    </div>
+  </form>
+    <div class="m1">
+        <span><ion-icon name="sparkles-outline"></ion-icon></span>
+        <p>
+        관광지: {{ place }}
+        </p>
+    </div>
+    <div class="m2">
+        <span><ion-icon name="time-outline"></ion-icon></span>
+        <p>
+        날짜와 시간: {{ date }}
+        </p>
+    </div>
+    <div class="m3">
+        <span><ion-icon name="partly-sunny-outline"></ion-icon></span>
+        <p>
+        날씨 상태: {{ state }}
+        </p>
+    </div>
+    <div class="m4">
+        <span><ion-icon name="thermometer-outline"></ion-icon></span>
+        <p>
+        기온: {{ temperatures }}
+        </p>
+    </div>
+    <div class="m5">
+        <span><ion-icon name="umbrella-outline"></ion-icon></span>
+        <p>
+        강수량: {{ rainfall }}
+        </p>
+    </div>
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+
