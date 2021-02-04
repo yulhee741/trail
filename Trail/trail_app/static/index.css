@@ -1,0 +1,22 @@
+ion-icon {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 11pt;
+    padding: 0px 5px 0px 0px;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ background: #313131;
+ font-family: sans-serif;
+}
+
+.center-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
